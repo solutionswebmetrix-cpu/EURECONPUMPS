@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import one from '../../assets/one.png';
 import two from '../../assets/two.png';
 import three from '../../assets/three.png';
-import four from '../../assets/Four.png';
+import four from '../../assets/four.png';
 
 const categories = [
   {
