@@ -4,7 +4,6 @@ import gsap from 'gsap';
 
 const Hero = () => {
   const titleRef = useRef(null);
-  const heroVideo = '/assets/Banner/Banner2.mp4';
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -21,21 +20,33 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-      {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <video 
-          key={heroVideo}
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-          preload="auto"
-          className="w-full h-full object-cover"
-        >
-          <source src={heroVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="absolute inset-0 bg-black/40" />
+      {/* Background Elements - Side by Side Videos */}
+      <div className="absolute inset-0 z-0 flex flex-col md:flex-row">
+        <div className="flex-1 relative overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            preload="auto"
+            className="w-full h-full object-cover"
+          >
+            <source src="/assets/Banner/Banner2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className="flex-1 relative overflow-hidden">
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            preload="auto"
+            className="w-full h-full object-cover"
+          >
+            <source src="/assets/Banner/Banner3.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className="absolute inset-0 bg-black/40 z-[1]" />
       </div>
 
       {/* Content */}
