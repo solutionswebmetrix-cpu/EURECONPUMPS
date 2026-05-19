@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
-import heroVideo from '../../assets/Banner/Banner2.mp4';
 
 const Hero = () => {
   const titleRef = useRef(null);
+  const heroVideo = '/assets/Banner/Banner2.mp4';
 
   useEffect(() => {
     const ctx = gsap.context(() => {
