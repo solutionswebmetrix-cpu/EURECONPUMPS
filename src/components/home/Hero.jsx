@@ -35,7 +35,7 @@ const Hero = () => {
           <source src={heroVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-white/20" />
       </div>
 
       {/* Content */}

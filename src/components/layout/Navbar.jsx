@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link
               key={link.name}
               to={link.path}
-              className={`relative font-medium text-sm tracking-widest uppercase transition-colors duration-300 ${
+              className={`relative font-bold text-sm tracking-widest uppercase transition-colors duration-300 ${
                 location.pathname === link.path ? 'text-primary' : 'text-text-secondary hover:text-text-primary'
               } group`}
             >
