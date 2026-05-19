@@ -1,9 +1,17 @@
-import { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import gsap from 'gsap';
 
 const Hero = () => {
-  const titleRef = useRef(null);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const videos = [
+    '/assets/Banner/Banner2.mp4', // Motor Video
+    '/assets/Banner/Banner3.mp4'  // Solar Video
+  ];
+
+  const handleVideoEnd = () => {
+    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
+  };
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -20,32 +28,28 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-      {/* Background Elements - Side by Side Videos */}
-      <div className="absolute inset-0 z-0 flex flex-col md:flex-row">
-        <div className="flex-1 relative overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover"
+      {/* Background Elements - Sequential Videos */}
+      <div className="absolute inset-0 z-0">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={videos[currentVideoIndex]}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0"
           >
-            <source src="/assets/Banner/Banner2.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div className="flex-1 relative overflow-hidden">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover"
-          >
-            <source src="/assets/Banner/Banner3.mp4" type="video/mp4" />
-          </video>
-        </div>
+            <video 
+              autoPlay 
+              muted 
+              playsInline
+              onEnded={handleVideoEnd}
+              className="w-full h-full object-cover"
+            >
+              <source src={videos[currentVideoIndex]} type="video/mp4" />
+            </video>
+          </motion.div>
+        </AnimatePresence>
         <div className="absolute inset-0 bg-black/40 z-[1]" />
       </div>
 
