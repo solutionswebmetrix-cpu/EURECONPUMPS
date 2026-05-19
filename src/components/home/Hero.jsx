@@ -35,7 +35,7 @@ const Hero = () => {
           <source src={heroVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 bg-white/20" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}
@@ -46,19 +46,19 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block py-2 px-6 rounded-full bg-primary/10 text-primary text-sm font-bold tracking-[0.2em] uppercase mb-8 backdrop-blur-sm border border-primary/20 shadow-sm">
+            <span className="inline-block py-2 px-6 rounded-full bg-primary/20 text-white text-sm font-bold tracking-[0.2em] uppercase mb-8 backdrop-blur-md border border-white/20 shadow-lg">
               Next-Gen Industrial Fluid Tech
             </span>
           </motion.div>
 
           <motion.h1
-            className="text-6xl md:text-8xl font-poppins font-extrabold leading-[1.1] mb-8 text-[#0f172a] drop-shadow-sm"
+            className="text-6xl md:text-8xl font-poppins font-extrabold leading-[1.1] mb-8 text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]"
           >
             <div className="overflow-hidden">
               <span className="hero-text-reveal inline-block">Future of</span>
             </div>
             <div className="overflow-hidden">
-              <span className="hero-text-reveal inline-block text-transparent bg-clip-text bg-premium-gradient filter drop-shadow-sm">
+              <span className="hero-text-reveal inline-block text-transparent bg-clip-text bg-premium-gradient filter drop-shadow-lg">
                 Industrial Solutions
               </span>
             </div>
