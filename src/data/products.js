@@ -1,0 +1,767 @@
+import img1 from "../assets/product/Industrial centrifugal pump with motor.png";
+import img2 from "../assets/product/Industrial pump components on blue surface.png";
+import img3 from "../assets/product/Industrial submersible pump and filter setup.png";
+import img4 from "../assets/product/Industriële motorpomp op witte achtergrond.png";
+import img5 from "../assets/product/Sleek stainless steel cylindrical component.png";
+import img6 from "../assets/product/Industriële pomp en motor assemblage.png";
+import img7 from "../assets/product/Compact electric diaphragm pump in focus.png";
+import img8 from "../assets/product/Stainless steel cylinders with cable accessory.png";
+import img9 from "../assets/product/Compact industrial water pump assembly.png";
+import img10 from "../assets/product/Industrial pump display in studio setting.png";
+import img11 from "../assets/product/Industriy pumps in a neat display.png";
+import img12 from "../assets/product/Industriële pomp en motorassemblage.png";
+import img13 from "../assets/product/Metallic submersible pumps in studio.png";
+import img14 from "../assets/product/Stainless steel pump display arrangement.png";
+import img15 from "../assets/product/Stainless steel submersible pump parts.png";
+import img16 from "../assets/product/Stainless steel submersible pumps catalog shot.png";
+import img17 from "../assets/product/Stainless steel submersible pumps in studio.png";
+import img18 from "../assets/product/Stainless-steel pump with green accents.png";
+import img19 from "../assets/product/Submersible control panel with meters.png";
+import img20 from "../assets/product/Submersible pump product shot.png";
+import img21 from "../assets/product/Submersible pumps in a row.png";
+import img22 from "../assets/product/सौर ऊर्जा से संचालित जल पंप सेटअप.png";
+import img23 from "../assets/product/Compact electric water pump assembly.png";
+import img24 from "../assets/product/Compact water pump in black frame.png";
+
+export const products = [
+  {
+    id: 1,
+    name: "Industrial Centrifugal Pump",
+    category: "openwell-pump-set",
+    image: img1,
+    images: [img1, img9, img10],
+    badge: "Best Seller",
+    rating: 4.9,
+    reviews: 128,
+    description: "High-performance industrial centrifugal pump designed for heavy-duty fluid transport with maximum efficiency. Perfect for agricultural, industrial, and commercial applications requiring reliable water circulation.",
+    specs: [
+      { label: "Flow Rate", value: "600 L/min" },
+      { label: "Max Pressure", value: "12 Bar" },
+      { label: "Material", value: "Cast Iron" },
+      { label: "Motor Power", value: "5 HP" },
+      { label: "Voltage", value: "220V/440V" },
+    ],
+    benefits: [
+      "Energy efficient design reduces power consumption",
+      "Durable construction for long service life",
+      "Easy maintenance and service",
+      "Suitable for various fluid types",
+      "Low noise operation",
+    ],
+    applications: [
+      "Agricultural irrigation",
+      "Industrial water supply",
+      "Commercial building systems",
+      "Water treatment plants",
+      "Process cooling systems"
+    ],
+    relatedProducts: [3, 6, 9],
+  },
+  {
+    id: 2,
+    name: "Precision Pump Components",
+    category: "submersible-pump-set",
+    image: img2,
+    images: [img2, img11, img14],
+    badge: "New",
+    rating: 4.7,
+    reviews: 56,
+    description: "High-precision components for industrial pumps, ensuring long-lasting performance and reliability. Manufactured with premium materials for maximum durability.",
+    specs: [
+      { label: "Type", value: "Internal Parts" },
+      { label: "Precision", value: "0.01mm" },
+      { label: "Material", value: "Alloy Steel" },
+      { label: "Warranty", value: "1 Year" },
+    ],
+    benefits: [
+      "High precision manufacturing",
+      "Corrosion resistant",
+      "Compatible with major pump brands",
+      "Easy replacement",
+    ],
+    applications: [
+      "Pump maintenance and repair",
+      "Industrial pump service centers",
+      "Pump manufacturing",
+      "Spare parts distribution"
+    ],
+    relatedProducts: [1, 3, 14],
+  },
+  {
+    id: 3,
+    name: "Core Pump Assembly Kit",
+    category: "submersible-pump-set",
+    image: img3,
+    images: [img3, img13, img20],
+    badge: "Premium",
+    rating: 4.8,
+    reviews: 89,
+    description: "Complete assembly kit for core industrial pump systems, featuring reinforced materials and precision engineering for optimal performance.",
+    specs: [
+      { label: "Kit Type", value: "Full Assembly" },
+      { label: "Durability", value: "High" },
+      { label: "Warranty", value: "2 Years" },
+      { label: "Material", value: "Stainless Steel" },
+    ],
+    benefits: [
+      "Complete solution for pump repair",
+      "All components pre-assembled",
+      "Saves installation time",
+      "Cost-effective compared to individual parts",
+    ],
+    applications: [
+      "Pump refurbishment projects",
+      "Industrial maintenance departments",
+      "Pump installation services",
+      "Emergency repair kits"
+    ],
+    relatedProducts: [2, 14, 17],
+  },
+  {
+    id: 4,
+    name: "Heavy-Duty Motor Assembly",
+    category: "control-panel-power-capacitor",
+    image: img4,
+    images: [img4, img12, img6],
+    rating: 4.6,
+    reviews: 72,
+    description: "Robust motor assembly unit designed to power heavy industrial pumping operations with exceptional reliability and efficiency.",
+    specs: [
+      { label: "Power", value: "5.5 kW" },
+      { label: "Voltage", value: "440V" },
+      { label: "Phase", value: "3 Phase" },
+      { label: "Efficiency", value: "IE3" },
+      { label: "Protection", value: "IP55" },
+    ],
+    benefits: [
+      "High efficiency motor",
+      "Low heat generation",
+      "Suitable for continuous operation",
+      "Thermal overload protection",
+    ],
+    applications: [
+      "Industrial pump systems",
+      "Borewell installations",
+      "Water treatment plants",
+      "Agricultural irrigation"
+    ],
+    relatedProducts: [19, 7, 1],
+  },
+  {
+    id: 5,
+    name: "Metallic Cylinder Series",
+    category: "hdpe-pipes",
+    image: img5,
+    images: [img5, img8, img11],
+    badge: "Limited",
+    rating: 4.5,
+    reviews: 43,
+    description: "Durable metallic cylinders for fluid pressure management in industrial systems. Built to withstand high pressure and harsh conditions.",
+    specs: [
+      { label: "Material", value: "Hardened Steel" },
+      { label: "Pressure Rating", value: "20 Bar" },
+      { label: "Diameter", value: "150mm" },
+      { label: "Length", value: "500mm" },
+    ],
+    benefits: [
+      "High pressure tolerance",
+      "Corrosion resistant coating",
+      "Long service life",
+      "Easy installation",
+    ],
+    applications: [
+      "Industrial pressure systems",
+      "Fluid storage tanks",
+      "Process engineering",
+      "Hydraulic systems"
+    ],
+    relatedProducts: [17, 18, 8],
+  },
+  {
+    id: 6,
+    name: "Compact Industrial Pump",
+    category: "borewell-pump-set",
+    image: img6,
+    images: [img6, img23, img24],
+    rating: 4.7,
+    reviews: 65,
+    description: "Space-saving compact industrial pump for specialized small-scale fluid operations. Perfect for installations where space is limited.",
+    specs: [
+      { label: "Size", value: "Compact" },
+      { label: "Weight", value: "15kg" },
+      { label: "Flow Rate", value: "200 L/min" },
+      { label: "Power", value: "1 HP" },
+    ],
+    benefits: [
+      "Space efficient design",
+      "Lightweight and portable",
+      "Easy to install",
+      "Low maintenance",
+    ],
+    applications: [
+      "Small scale irrigation",
+      "Residential water supply",
+      "Commercial building systems",
+      "Light industrial applications"
+    ],
+    relatedProducts: [1, 7, 9],
+  },
+  {
+    id: 7,
+    name: "Electric Diaphragm Pump",
+    category: "openwell-pump-set",
+    image: img7,
+    images: [img7, img23, img24],
+    rating: 4.8,
+    reviews: 78,
+    description: "Compact electric diaphragm pump designed for versatile fluid transfer applications. Ideal for chemicals, viscous liquids, and more.",
+    specs: [
+      { label: "Type", value: "Diaphragm" },
+      { label: "Power", value: "0.5 HP" },
+      { label: "Flow Rate", value: "100 L/min" },
+      { label: "Material", value: "Polypropylene" },
+    ],
+    benefits: [
+      "Self-priming capability",
+      "Handles viscous fluids",
+      "Dry run protection",
+      "Chemical resistant",
+    ],
+    applications: [
+      "Chemical transfer",
+      "Pharmaceutical processes",
+      "Food and beverage industry",
+      "Wastewater treatment"
+    ],
+    relatedProducts: [1, 6, 9],
+  },
+  {
+    id: 8,
+    name: "Control System Cables",
+    category: "wire-cables",
+    image: img8,
+    images: [img8, img5, img11],
+    rating: 4.4,
+    reviews: 38,
+    description: "High-grade insulated electrical cables for industrial pump control systems. Provides reliable power and signal transmission.",
+    specs: [
+      { label: "Type", value: "Shielded" },
+      { label: "Length", value: "10m" },
+      { label: "Gauge", value: "2.5 sq mm" },
+      { label: "Insulation", value: "PVC" },
+    ],
+    benefits: [
+      "Electromagnetic interference protection",
+      "Weather resistant",
+      "Durable insulation",
+      "Flexible for easy routing",
+    ],
+    applications: [
+      "Industrial control systems",
+      "Pump panel wiring",
+      "Outdoor installations",
+      "Industrial automation"
+    ],
+    relatedProducts: [19, 4, 5],
+  },
+  {
+    id: 9,
+    name: "Compact Industrial Water Pump",
+    category: "openwell-pump-set",
+    image: img9,
+    images: [img9, img1, img10],
+    badge: "Popular",
+    rating: 4.9,
+    reviews: 156,
+    description: "Engine-powered portable water pump for versatile field applications. Perfect for agricultural irrigation, construction sites, and emergency water transfer.",
+    specs: [
+      { label: "Flow Rate", value: "500 L/min" },
+      { label: "Head", value: "40m" },
+      { label: "Power", value: "3 HP" },
+      { label: "Material", value: "Cast Iron" },
+    ],
+    benefits: [
+      "Portable and easy to transport",
+      "No electricity required",
+      "Quick setup and operation",
+      "Suitable for remote locations",
+    ],
+    applications: [
+      "Agricultural irrigation",
+      "Construction site dewatering",
+      "Emergency water transfer",
+      "Remote area water supply"
+    ],
+    relatedProducts: [1, 6, 22],
+  },
+  {
+    id: 10,
+    name: "Industrial Water Pump Assembly",
+    category: "openwell-pump-set",
+    image: img1,
+    images: [img1, img9, img10],
+    rating: 4.7,
+    reviews: 67,
+    description: "Complete industrial water pump assembly ready for installation. Includes all necessary components for immediate operation.",
+    specs: [
+      { label: "Flow Rate", value: "500 L/min" },
+      { label: "Head", value: "40m" },
+      { label: "Power", value: "3 HP" },
+      { label: "Material", value: "Cast Iron" },
+    ],
+    benefits: [
+      "Complete ready-to-install package",
+      "Pre-tested and calibrated",
+      "Easy setup",
+      "Comprehensive warranty",
+    ],
+    applications: [
+      "Industrial water supply",
+      "Commercial buildings",
+      "Agricultural farms",
+      "Process industries"
+    ],
+    relatedProducts: [1, 9, 6],
+  },
+  {
+    id: 11,
+    name: "Studio Grade Pump Display",
+    category: "submersible-pump-set",
+    image: img10,
+    images: [img10, img11, img14],
+    rating: 4.5,
+    reviews: 29,
+    description: "Premium pump display unit perfect for showrooms and exhibitions. Showcases product features with professional presentation.",
+    specs: [
+      { label: "Type", value: "Display Unit" },
+      { label: "Material", value: "Acrylic & Metal" },
+      { label: "Size", value: "120x80cm" },
+      { label: "Weight", value: "25kg" },
+    ],
+    benefits: [
+      "Professional presentation",
+      "Attracts customer attention",
+      "Durable construction",
+      "Easy to assemble",
+    ],
+    applications: [
+      "Product showrooms",
+      "Trade exhibitions",
+      "Marketing displays",
+      "Retail stores"
+    ],
+    relatedProducts: [12, 14, 17],
+  },
+  {
+    id: 12,
+    name: "Industrial Pump Collection",
+    category: "submersible-pump-set",
+    image: img11,
+    images: [img11, img10, img14],
+    badge: "Premium",
+    rating: 4.8,
+    reviews: 45,
+    description: "Complete collection of industrial pumps for bulk purchase. Ideal for distributors and large-scale projects.",
+    specs: [
+      { label: "Quantity", value: "5 Units" },
+      { label: "Types", value: "Mixed" },
+      { label: "Warranty", value: "2 Years" },
+      { label: "Support", value: "Full Installation" },
+    ],
+    benefits: [
+      "Bulk purchase discount",
+      "Complete range of pumps",
+      "Priority service",
+      "Technical support included",
+    ],
+    applications: [
+      "Distributor inventory",
+      "Large scale projects",
+      "Industrial complexes",
+      "Government contracts"
+    ],
+    relatedProducts: [1, 3, 13],
+  },
+  {
+    id: 13,
+    name: "Industrial Motor & Pump Assembly",
+    category: "borewell-pump-set",
+    image: img12,
+    images: [img12, img4, img6],
+    rating: 4.6,
+    reviews: 53,
+    description: "Integrated motor and pump assembly designed for seamless operation. Perfect for borewell and deep well applications.",
+    specs: [
+      { label: "Motor Power", value: "7.5 HP" },
+      { label: "Head", value: "80m" },
+      { label: "Flow Rate", value: "400 L/min" },
+      { label: "Phase", value: "3 Phase" },
+    ],
+    benefits: [
+      "Integrated design",
+      "High efficiency",
+      "Suitable for deep wells",
+      "Low maintenance",
+    ],
+    applications: [
+      "Deep borewell extraction",
+      "Agricultural water supply",
+      "Industrial water systems",
+      "Community water projects"
+    ],
+    relatedProducts: [4, 6, 13],
+  },
+  {
+    id: 14,
+    name: "Metallic Submersible Pumps",
+    category: "submersible-pump-set",
+    image: img13,
+    images: [img13, img3, img20],
+    badge: "Best Seller",
+    rating: 4.9,
+    reviews: 189,
+    description: "Premium metallic submersible pumps built for durability and performance. Perfect for borewell and underground water extraction.",
+    specs: [
+      { label: "Material", value: "Stainless Steel" },
+      { label: "Head", value: "100m" },
+      { label: "Flow Rate", value: "350 L/min" },
+      { label: "Power", value: "3 HP" },
+    ],
+    benefits: [
+      "Corrosion resistant stainless steel",
+      "Suitable for deep borewells",
+      "Energy efficient",
+      "Long service life",
+    ],
+    applications: [
+      "Borewell water extraction",
+      "Underground water systems",
+      "Agricultural irrigation",
+      "Residential water supply"
+    ],
+    relatedProducts: [3, 16, 17],
+  },
+  {
+    id: 15,
+    name: "Stainless Steel Pump Display",
+    category: "submersible-pump-set",
+    image: img14,
+    images: [img14, img10, img11],
+    rating: 4.4,
+    reviews: 34,
+    description: "Elegant stainless steel pump display arrangement for showrooms. Professional display solution to showcase your products.",
+    specs: [
+      { label: "Material", value: "Stainless Steel" },
+      { label: "Size", value: "150x100cm" },
+      { label: "Capacity", value: "6 Pumps" },
+      { label: "Finish", value: "Mirror Polish" },
+    ],
+    benefits: [
+      "Premium look",
+      "Rust resistant",
+      "Easy to clean",
+      "Modular design",
+    ],
+    applications: [
+      "Showroom displays",
+      "Exhibition booths",
+      "Product demonstrations",
+      "Retail marketing"
+    ],
+    relatedProducts: [11, 12, 17],
+  },
+  {
+    id: 16,
+    name: "Submersible Pump Parts",
+    category: "submersible-pump-set",
+    image: img15,
+    images: [img15, img13, img16],
+    rating: 4.3,
+    reviews: 41,
+    description: "Genuine replacement parts for submersible pumps. Ensure your pump continues to operate at peak performance.",
+    specs: [
+      { label: "Type", value: "Spare Parts" },
+      { label: "Compatibility", value: "Most Brands" },
+      { label: "Material", value: "Stainless Steel" },
+      { label: "Warranty", value: "6 Months" },
+    ],
+    benefits: [
+      "Genuine parts",
+      "Perfect fit",
+      "Easy replacement",
+      "Restores original performance",
+    ],
+    applications: [
+      "Pump maintenance",
+      "Service centers",
+      "Repair shops",
+      "Industrial maintenance"
+    ],
+    relatedProducts: [13, 3, 16],
+  },
+  {
+    id: 17,
+    name: "Stainless Steel Submersible Catalog",
+    category: "submersible-pump-set",
+    image: img16,
+    images: [img16, img13, img17],
+    rating: 4.5,
+    reviews: 27,
+    description: "Complete stainless steel submersible pump set with catalog. Professional presentation for sales and marketing.",
+    specs: [
+      { label: "Type", value: "Complete Set" },
+      { label: "Material", value: "Stainless Steel" },
+      { label: "Head", value: "120m" },
+      { label: "Flow Rate", value: "300 L/min" },
+    ],
+    benefits: [
+      "Premium quality",
+      "Complete documentation",
+      "Marketing materials included",
+      "Technical support",
+    ],
+    applications: [
+      "Sales and marketing",
+      "Product catalogs",
+      "Customer demonstrations",
+      "Distributor packages"
+    ],
+    relatedProducts: [13, 3, 15],
+  },
+  {
+    id: 18,
+    name: "Studio Submersible Pumps",
+    category: "submersible-pump-set",
+    image: img17,
+    images: [img17, img13, img21],
+    badge: "New",
+    rating: 4.6,
+    reviews: 39,
+    description: "Professional studio-grade submersible pumps perfect for display and demonstration purposes.",
+    specs: [
+      { label: "Type", value: "Display Unit" },
+      { label: "Material", value: "Stainless Steel" },
+      { label: "Size", value: "Standard" },
+      { label: "Finish", value: "Polished" },
+    ],
+    benefits: [
+      "Perfect for showrooms",
+      "Attracts customers",
+      "Demonstration ready",
+      "Premium appearance",
+    ],
+    applications: [
+      "Showroom displays",
+      "Product exhibitions",
+      "Marketing events",
+      "Retail stores"
+    ],
+    relatedProducts: [13, 14, 21],
+  },
+  {
+    id: 19,
+    name: "Green Accent Stainless Pump",
+    category: "borewell-pump-set",
+    image: img18,
+    images: [img18, img13, img17],
+    badge: "Limited",
+    rating: 4.7,
+    reviews: 58,
+    description: "Stylish stainless steel pump with green accents. Combines aesthetics with high performance.",
+    specs: [
+      { label: "Material", value: "Stainless Steel" },
+      { label: "Head", value: "90m" },
+      { label: "Flow Rate", value: "320 L/min" },
+      { label: "Power", value: "2.5 HP" },
+    ],
+    benefits: [
+      "Unique design",
+      "Corrosion resistant",
+      "High performance",
+      "Easy maintenance",
+    ],
+    applications: [
+      "Residential water supply",
+      "Commercial buildings",
+      "Modern installations",
+      "Premium projects"
+    ],
+    relatedProducts: [13, 6, 12],
+  },
+  {
+    id: 20,
+    name: "Submersible Control Panel",
+    category: "control-panel-power-capacitor",
+    image: img19,
+    images: [img19, img4, img8],
+    rating: 4.8,
+    reviews: 82,
+    description: "Advanced submersible control panel with meters for monitoring and protection. Ensures safe and efficient pump operation.",
+    specs: [
+      { label: "Type", value: "Control Panel" },
+      { label: "Phase", value: "3 Phase" },
+      { label: "Protection", value: "Overload, Dry Run" },
+      { label: "Display", value: "Digital Meters" },
+    ],
+    benefits: [
+      "Complete pump protection",
+      "Real-time monitoring",
+      "Easy to operate",
+      "Long service life",
+    ],
+    applications: [
+      "Submersible pump control",
+      "Borewell installations",
+      "Industrial pump systems",
+      "Water treatment plants"
+    ],
+    relatedProducts: [4, 8, 13],
+  },
+  {
+    id: 21,
+    name: "Professional Submersible Pump",
+    category: "submersible-pump-set",
+    image: img20,
+    images: [img20, img3, img13],
+    rating: 4.6,
+    reviews: 64,
+    description: "Professional grade submersible pump for commercial and industrial applications. Built for reliability and performance.",
+    specs: [
+      { label: "Head", value: "70m" },
+      { label: "Flow Rate", value: "380 L/min" },
+      { label: "Power", value: "2 HP" },
+      { label: "Material", value: "Cast Iron" },
+    ],
+    benefits: [
+      "Professional grade",
+      "Reliable performance",
+      "Suitable for continuous use",
+      "Low maintenance",
+    ],
+    applications: [
+      "Commercial water supply",
+      "Industrial processes",
+      "Irrigation systems",
+      "Building water systems"
+    ],
+    relatedProducts: [3, 13, 19],
+  },
+  {
+    id: 22,
+    name: "Submersible Pumps Collection",
+    category: "submersible-pump-set",
+    image: img21,
+    images: [img21, img13, img17],
+    badge: "Premium",
+    rating: 4.9,
+    reviews: 51,
+    description: "Complete collection of submersible pumps for all applications. From residential to industrial needs.",
+    specs: [
+      { label: "Quantity", value: "8 Units" },
+      { label: "Range", value: "1 HP to 10 HP" },
+      { label: "Warranty", value: "3 Years" },
+      { label: "Support", value: "Full Service" },
+    ],
+    benefits: [
+      "Complete solution",
+      "Bulk discount",
+      "Priority service",
+      "Technical support",
+    ],
+    applications: [
+      "Distributor inventory",
+      "Large scale projects",
+      "Municipal water systems",
+      "Industrial complexes"
+    ],
+    relatedProducts: [13, 19, 12],
+  },
+  {
+    id: 23,
+    name: "Solar Powered Water Pump",
+    category: "solar-products",
+    image: img22,
+    images: [img22, img9, img1],
+    badge: "Eco-Friendly",
+    rating: 4.9,
+    reviews: 112,
+    description: "Solar-powered water pump system for sustainable water supply. Perfect for remote locations without electricity.",
+    specs: [
+      { label: "Power Source", value: "Solar" },
+      { label: "Solar Panel", value: "1.5 kW" },
+      { label: "Flow Rate", value: "300 L/min" },
+      { label: "Head", value: "50m" },
+    ],
+    benefits: [
+      "No electricity costs",
+      "Environmentally friendly",
+      "Suitable for remote areas",
+      "Low operating costs",
+    ],
+    applications: [
+      "Agricultural irrigation",
+      "Remote village water supply",
+      "Farm watering systems",
+      "Off-grid applications"
+    ],
+    relatedProducts: [9, 1, 4],
+  },
+  {
+    id: 24,
+    name: "Compact Electric Water Pump",
+    category: "openwell-pump-set",
+    image: img23,
+    images: [img23, img24, img7],
+    rating: 4.4,
+    reviews: 47,
+    description: "Compact electric water pump assembly for small-scale applications. Perfect for residential and light commercial use.",
+    specs: [
+      { label: "Power", value: "0.5 HP" },
+      { label: "Flow Rate", value: "150 L/min" },
+      { label: "Head", value: "25m" },
+      { label: "Voltage", value: "220V" },
+    ],
+    benefits: [
+      "Compact size",
+      "Easy installation",
+      "Quiet operation",
+      "Affordable price",
+    ],
+    applications: [
+      "Residential water supply",
+      "Small gardens",
+      "Home irrigation",
+      "Light commercial use"
+    ],
+    relatedProducts: [7, 6, 25],
+  },
+  {
+    id: 25,
+    name: "Black Frame Water Pump",
+    category: "openwell-pump-set",
+    image: img24,
+    images: [img24, img23, img7],
+    rating: 4.5,
+    reviews: 59,
+    description: "Stylish compact water pump with black frame. Perfect blend of design and functionality.",
+    specs: [
+      { label: "Power", value: "1 HP" },
+      { label: "Flow Rate", value: "200 L/min" },
+      { label: "Head", value: "30m" },
+      { label: "Frame", value: "Black Powder Coated" },
+    ],
+    benefits: [
+      "Stylish design",
+      "Rust resistant frame",
+      "Easy to move",
+      "Reliable performance",
+    ],
+    applications: [
+      "Residential use",
+      "Home gardens",
+      "Small farms",
+      "Light commercial applications"
+    ],
+    relatedProducts: [24, 7, 6],
+  },
+];
