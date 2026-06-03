@@ -47,11 +47,13 @@ const SolutionDetail = () => {
                 </button>
               </Link>
             </div>
-            <div className="rounded-[40px] overflow-hidden shadow-2xl border border-black/10">
+            <div className="rounded-[40px] overflow-hidden shadow-2xl border border-black/10 max-w-lg mx-auto lg:mx-0">
               <img
                 src={solution.heroImage}
                 alt={solution.title}
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
+                loading="eager"
+                decoding="async"
               />
             </div>
           </div>

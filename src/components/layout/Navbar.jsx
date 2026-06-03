@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX, HiChevronDown, HiChevronRight, HiSearch } from 'react-icons/hi';
 import { productCategories } from '../../data/categories';
-import { solarSolutions } from '../../data/solutions';
+import { solarSolutions, solutionCategories } from '../../data/solutions';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -103,7 +103,7 @@ const Navbar = () => {
                       />
                     </button>
 
-                    {/* Products Mega Menu */}
+                    {/* Products Dropdown */}
                     <AnimatePresence>
                       {isMegaMenuOpen && (
                         <motion.div
@@ -111,62 +111,45 @@ const Navbar = () => {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: 15 }}
                           transition={{ duration: 0.2, ease: 'easeOut' }}
-                          className="absolute left-1/2 top-full mt-3 z-[999] w-[90vw] max-w-7xl -translate-x-1/2"
+                          className="absolute left-0 top-full mt-3 z-[999] w-80"
                         >
                           <div className="overflow-hidden rounded-2xl bg-white/95 backdrop-blur-xl shadow-2xl border border-gray-200">
-                            <div className="px-8 py-8">
-                              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {productCategories.slice(0, 6).map((category, idx) => (
-                                  <div key={idx}>
-                                    <Link
-                                      to={category.path}
-                                      onClick={() => setIsMegaMenuOpen(false)}
-                                      className="flex items-center gap-3 mb-4"
-                                    >
-                                      <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${category.color} flex items-center justify-center`}>
-                                        <category.icon size={20} className="text-white" />
-                                      </div>
-                                      <div>
-                                        <h3 className="text-base font-bold text-slate-800">
-                                          {category.name}
-                                        </h3>
-                                      </div>
-                                    </Link>
-                                    {category.subcategories.length > 0 && (
-                                      <ul className="space-y-2">
-                                        {category.subcategories.map((sub, subIdx) => (
-                                          <li key={subIdx}>
-                                            <Link
-                                              to={sub.path}
-                                              onClick={() => setIsMegaMenuOpen(false)}
-                                              className="flex items-center gap-2 text-sm text-slate-600 hover:text-cyan-600 transition-colors"
-                                            >
-                                              <HiChevronRight size={14} className="text-cyan-500" />
-                                              {sub.name}
-                                            </Link>
-                                          </li>
-                                        ))}
-                                      </ul>
-                                    )}
-                                  </div>
+                            <div className="px-4 py-3 max-h-[500px] overflow-y-auto">
+                              <div className="space-y-1">
+                                {productCategories.map((category, idx) => (
+                                  <Link
+                                    key={idx}
+                                    to={category.path}
+                                    onClick={() => setIsMegaMenuOpen(false)}
+                                    className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-slate-100 transition-colors"
+                                  >
+                                    <div className={`w-9 h-9 rounded-lg bg-gradient-to-br ${category.color} flex items-center justify-center flex-shrink-0`}>
+                                      <category.icon size={18} className="text-white" />
+                                    </div>
+                                    <div>
+                                      <h3 className="text-sm font-semibold text-slate-800">
+                                        {category.name}
+                                      </h3>
+                                    </div>
+                                  </Link>
                                 ))}
                               </div>
                             </div>
-                            <div className="px-8 py-4 bg-gradient-to-r from-slate-50 to-gray-50 border-t border-gray-200 flex items-center justify-between">
+                            <div className="px-4 py-3 bg-gradient-to-r from-slate-50 to-gray-50 border-t border-gray-200 flex items-center justify-between">
                               <Link
                                 to="/products"
                                 onClick={() => setIsMegaMenuOpen(false)}
                                 className="text-sm font-semibold text-cyan-600 hover:text-cyan-700 transition-colors flex items-center gap-1"
                               >
                                 View All Products
-                                <HiChevronRight size={16} />
+                                <HiChevronRight size={14} />
                               </Link>
                               <Link
                                 to="/contact"
                                 onClick={() => setIsMegaMenuOpen(false)}
                                 className="text-sm font-semibold text-slate-700 hover:text-cyan-600 transition-colors"
                               >
-                                Get Custom Quote
+                                Contact Our Experts
                               </Link>
                             </div>
                           </div>
@@ -206,7 +189,7 @@ const Navbar = () => {
                       />
                     </button>
 
-                    {/* Solutions Mega Menu */}
+                    {/* Solutions Dropdown */}
                     <AnimatePresence>
                       {isSolutionsMegaMenuOpen && (
                         <motion.div
@@ -214,41 +197,38 @@ const Navbar = () => {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: 15 }}
                           transition={{ duration: 0.2, ease: 'easeOut' }}
-                          className="absolute left-1/2 top-full mt-3 z-[999] w-[90vw] max-w-5xl -translate-x-1/2"
+                          className="absolute left-0 top-full mt-3 z-[999] w-80"
                         >
                           <div className="overflow-hidden rounded-2xl bg-white/95 backdrop-blur-xl shadow-2xl border border-gray-200">
-                            <div className="px-8 py-8">
-                              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="px-4 py-3 max-h-[500px] overflow-y-auto">
+                              <div className="space-y-1">
                                 {solarSolutions.map((solution, idx) => (
                                   <Link
                                     key={solution.id}
                                     to={`/solutions/${solution.id}`}
                                     onClick={() => setIsSolutionsMegaMenuOpen(false)}
-                                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-slate-50 transition-colors"
+                                    className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-slate-100 transition-colors"
                                   >
-                                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${solution.color} flex items-center justify-center`}>
-                                      <solution.icon size={24} className="text-white" />
+                                    <div className={`w-9 h-9 rounded-lg bg-gradient-to-br ${solution.color} flex items-center justify-center flex-shrink-0`}>
+                                      <solution.icon size={18} className="text-white" />
                                     </div>
                                     <div>
-                                      <h3 className="text-base font-bold text-slate-800">
+                                      <h3 className="text-sm font-semibold text-slate-800">
                                         {solution.title}
                                       </h3>
-                                      <p className="text-sm text-slate-500">
-                                        {solution.description}
-                                      </p>
                                     </div>
                                   </Link>
                                 ))}
                               </div>
                             </div>
-                            <div className="px-8 py-4 bg-gradient-to-r from-slate-50 to-gray-50 border-t border-gray-200 flex items-center justify-between">
+                            <div className="px-4 py-3 bg-gradient-to-r from-slate-50 to-gray-50 border-t border-gray-200 flex items-center justify-between">
                               <Link
                                 to="/solutions"
                                 onClick={() => setIsSolutionsMegaMenuOpen(false)}
                                 className="text-sm font-semibold text-cyan-600 hover:text-cyan-700 transition-colors flex items-center gap-1"
                               >
                                 View All Solutions
-                                <HiChevronRight size={16} />
+                                <HiChevronRight size={14} />
                               </Link>
                               <Link
                                 to="/contact"
@@ -379,22 +359,22 @@ const Navbar = () => {
                 </div>
                 <hr className="border-gray-200" />
                 {/* Solutions on Mobile */}
-                <div>
-                  <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">Solar Solutions</h3>
-                  <div className="space-y-2">
-                    {solarSolutions.map((sol, idx) => (
-                      <Link
-                        key={idx}
-                        to={`/solutions/${sol.id}`}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className="flex items-center gap-3 py-2 text-slate-700 hover:text-cyan-600"
-                      >
-                        <sol.icon size={18} className="text-cyan-500" />
-                        {sol.title}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+                    <div>
+                      <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">Solar Solutions</h3>
+                      <div className="space-y-2">
+                        {solarSolutions.map((sol, idx) => (
+                          <Link
+                            key={sol.id}
+                            to={`/solutions/${sol.id}`}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="flex items-center gap-3 py-2 text-slate-700 hover:text-cyan-600"
+                          >
+                            <sol.icon size={18} className="text-cyan-500" />
+                            {sol.title}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
               </div>
             </motion.div>
           )}

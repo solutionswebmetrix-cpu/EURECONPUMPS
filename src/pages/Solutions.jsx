@@ -56,12 +56,11 @@ const Solutions = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="flex-1 relative group"
+                className="flex-1 relative group max-w-md mx-auto lg:mx-0"
               >
                 <div className="absolute inset-0 bg-primary/10 blur-[100px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                <div className="relative rounded-[40px] overflow-hidden border border-black/10 aspect-video lg:aspect-square shadow-2xl">
-                  <img src={solution.heroImage} alt={solution.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-white/80 to-transparent" />
+                <div className="relative rounded-[40px] overflow-hidden border border-black/10 shadow-2xl">
+                  <img src={solution.heroImage} alt={solution.title} className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700" />
                 </div>
               </motion.div>
             </div>
