@@ -116,7 +116,7 @@ const Navbar = () => {
                           <div className="overflow-hidden rounded-2xl bg-white/95 backdrop-blur-xl shadow-2xl border border-gray-200">
                             <div className="px-4 py-3 max-h-[500px] overflow-y-auto">
                               <div className="space-y-1">
-                                {productCategories.map((category, idx) => (
+                                {productCategories.filter(cat => !['single-three-phase-panel', 'dol-starter', 'motor-capacitor', 'submersible-capacitor'].includes(cat.id)).map((category, idx) => (
                                   <Link
                                     key={idx}
                                     to={category.path}
@@ -344,7 +344,7 @@ const Navbar = () => {
                 <div>
                   <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">Product Categories</h3>
                   <div className="space-y-2">
-                    {productCategories.map((cat, idx) => (
+                    {productCategories.filter(cat => !['single-three-phase-panel', 'dol-starter', 'motor-capacitor', 'submersible-capacitor'].includes(cat.id)).map((cat, idx) => (
                       <Link
                         key={idx}
                         to={cat.path}

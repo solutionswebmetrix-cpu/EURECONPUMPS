@@ -1,4 +1,4 @@
-import { Droplets, Zap, Sun, Cable, Cylinder } from 'lucide-react';
+import { Droplets, Zap, Sun, Cable, Cylinder, Cpu } from 'lucide-react';
 
 export const productCategories = [
   {
@@ -23,7 +23,17 @@ export const productCategories = [
     icon: Droplets,
     color: 'from-cyan-500 to-sky-500',
     path: '/category/borewell-pump-set',
-    subcategories: []
+    subcategories: [
+      { name: 'SS Borewell Pump', path: '/category/borewell-pump-set/ss' },
+      { name: 'CI Borewell Pump', path: '/category/borewell-pump-set/ci' },
+      { name: 'Noryl Borewell Pump', path: '/category/borewell-pump-set/noryl' },
+      { name: 'V3', path: '/category/borewell-pump-set/v3' },
+      { name: 'V4', path: '/category/borewell-pump-set/v4' },
+      { name: 'V5', path: '/category/borewell-pump-set/v5' },
+      { name: 'V6', path: '/category/borewell-pump-set/v6' },
+      { name: 'V7', path: '/category/borewell-pump-set/v7' },
+      { name: 'V8', path: '/category/borewell-pump-set/v8' },
+    ]
   },
   {
     id: 'openwell-pump-set',
@@ -32,7 +42,14 @@ export const productCategories = [
     icon: Droplets,
     color: 'from-sky-500 to-blue-500',
     path: '/category/openwell-pump-set',
-    subcategories: []
+    subcategories: [
+      { name: 'SS Openwell Pump', path: '/category/openwell-pump-set/ss' },
+      { name: 'CI Openwell Pump', path: '/category/openwell-pump-set/ci' },
+      { name: 'Mini', path: '/category/openwell-pump-set/mini' },
+      { name: 'V7', path: '/category/openwell-pump-set/v7' },
+      { name: 'V8', path: '/category/openwell-pump-set/v8' },
+      { name: 'V9', path: '/category/openwell-pump-set/v9' },
+    ]
   },
   {
     id: 'control-panel-power-capacitor',
@@ -42,12 +59,47 @@ export const productCategories = [
     color: 'from-yellow-500 to-orange-500',
     path: '/category/control-panel-power-capacitor',
     subcategories: [
-      { name: 'Single Phase Panel', path: '/category/single-phase-panel' },
-      { name: 'Three Phase Panel', path: '/category/three-phase-panel' },
+      { name: 'Single & Three Phase Panel', path: '/category/single-three-phase-panel' },
       { name: 'DOL Starter', path: '/category/dol-starter' },
       { name: 'Motor Capacitor', path: '/category/motor-capacitor' },
       { name: 'Submersible Capacitor', path: '/category/submersible-capacitor' },
     ]
+  },
+  {
+    id: 'single-three-phase-panel',
+    name: 'Single & Three Phase Panel',
+    description: 'High-Quality Electrical Control Panels',
+    icon: Zap,
+    color: 'from-yellow-600 to-orange-600',
+    path: '/category/single-three-phase-panel',
+    subcategories: []
+  },
+  {
+    id: 'dol-starter',
+    name: 'DOL Starter',
+    description: 'Direct On-Line Motor Starters',
+    icon: Cpu,
+    color: 'from-gray-600 to-gray-800',
+    path: '/category/dol-starter',
+    subcategories: []
+  },
+  {
+    id: 'motor-capacitor',
+    name: 'Motor Capacitor',
+    description: 'Premium Motor Running & Starting Capacitors',
+    icon: Zap,
+    color: 'from-amber-500 to-yellow-600',
+    path: '/category/motor-capacitor',
+    subcategories: []
+  },
+  {
+    id: 'submersible-capacitor',
+    name: 'Submersible Capacitor',
+    description: 'Water-Resistant Submersible Pump Capacitors',
+    icon: Droplets,
+    color: 'from-blue-600 to-cyan-600',
+    path: '/category/submersible-capacitor',
+    subcategories: []
   },
   {
     id: 'solar-products',
@@ -57,11 +109,15 @@ export const productCategories = [
     color: 'from-orange-500 to-red-500',
     path: '/category/solar-products',
     subcategories: [
-      { name: 'Solar Pumps', path: '/category/solar-pumps' },
-      { name: 'Solar Controllers', path: '/category/solar-controllers' },
-      { name: 'Solar Panels', path: '/category/solar-panels' },
-      { name: 'Solar Inverters', path: '/category/solar-inverters' },
-      { name: 'Solar Street Lights', path: '/category/solar-street-lights' },
+      { name: 'Solar Pump & Controller', path: '/category/solar-pump-controller' },
+      { name: 'Solar Rooftop', path: '/category/solar-rooftop' },
+      { name: 'Solar Power Plant', path: '/category/solar-power-plant' },
+      { name: 'Solar Inverter', path: '/category/solar-inverter' },
+      { name: 'Solar Panel', path: '/category/solar-panel' },
+      { name: 'Solar Street Light', path: '/category/solar-street-light' },
+      { name: 'Poles and High Mast', path: '/category/poles-high-mast' },
+      { name: 'Structure for Solar Pump', path: '/category/structure-solar-pump' },
+      { name: 'Structure for Solar Rooftop & Power Plant', path: '/category/structure-solar-rooftop-power-plant' },
     ]
   },
   {

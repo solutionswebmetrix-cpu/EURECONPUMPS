@@ -51,6 +51,29 @@ const CategoryPage = () => {
           </p>
         </motion.div>
 
+        {/* Subcategories */}
+        {category.subcategories && category.subcategories.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="mb-16"
+          >
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Browse Subcategories</h2>
+            <div className="flex flex-wrap gap-4">
+              {category.subcategories.map((subcat, idx) => (
+                <Link 
+                  key={idx}
+                  to={subcat.path}
+                  className="px-6 py-3 bg-white border-2 border-gray-200 rounded-full text-gray-700 font-semibold hover:border-cyan-500 hover:text-cyan-600 transition-all duration-300 hover:shadow-lg"
+                >
+                  {subcat.name}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
         {/* Products or Placeholder */}
         {categoryProducts.length > 0 ? (
           /* Product Grid */

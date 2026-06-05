@@ -22,6 +22,7 @@ import img21 from "../assets/product/Submersible pumps in a row.png";
 import img22 from "../assets/product/सौर ऊर्जा से संचालित जल पंप सेटअप.png";
 import img23 from "../assets/product/Compact electric water pump assembly.png";
 import img24 from "../assets/product/Compact water pump in black frame.png";
+import img25 from "../assets/product/electrical cables.png";
 
 export const products = [
   {
@@ -56,6 +57,197 @@ export const products = [
       "Process cooling systems"
     ],
     relatedProducts: [3, 6, 9],
+  },
+  {
+    id: 26,
+    name: "Single Phase Control Panel",
+    category: "single-three-phase-panel",
+    image: img19,
+    images: [img19, img4, img8],
+    badge: "Best Seller",
+    rating: 4.8,
+    reviews: 95,
+    description: "Reliable single-phase control panel for motor protection and control, featuring overload, dry run, and overvoltage protection.",
+    specs: [
+      { label: "Phase", value: "Single Phase" },
+      { label: "Voltage", value: "220V-240V" },
+      { label: "Motor Capacity", value: "0.5 HP - 5 HP" },
+      { label: "Protection", value: "Overload, Dry Run, Overvoltage" },
+      { label: "Enclosure", value: "IP54" },
+    ],
+    benefits: [
+      "Comprehensive motor protection",
+      "Easy installation and operation",
+      "Durable construction",
+      "LED indicators for status",
+      "Compact design",
+    ],
+    applications: [
+      "Single-phase motor control",
+      "Submersible pumps",
+      "Monoblock pumps",
+      "Domestic applications"
+    ],
+    relatedProducts: [27, 28, 20],
+  },
+  {
+    id: 27,
+    name: "Three Phase Control Panel",
+    category: "single-three-phase-panel",
+    image: img19,
+    images: [img19, img4, img8],
+    badge: "Premium",
+    rating: 4.9,
+    reviews: 156,
+    description: "Heavy-duty three-phase control panel for industrial applications with digital metering and advanced protection features.",
+    specs: [
+      { label: "Phase", value: "Three Phase" },
+      { label: "Voltage", value: "380V-440V" },
+      { label: "Motor Capacity", value: "1 HP - 50 HP" },
+      { label: "Protection", value: "Overload, Dry Run, Under/Over Voltage, Phase Failure" },
+      { label: "Display", value: "Digital Meters" },
+    ],
+    benefits: [
+      "Advanced protection features",
+      "Digital monitoring",
+      "Industrial-grade build",
+      "Long service life",
+      "Easy maintenance",
+    ],
+    applications: [
+      "Industrial motor control",
+      "Submersible pumps",
+      "Water treatment plants",
+      "Manufacturing units"
+    ],
+    relatedProducts: [26, 28, 20],
+  },
+  {
+    id: 28,
+    name: "DOL Starter (1 HP - 10 HP)",
+    category: "dol-starter",
+    image: img4,
+    images: [img4, img12, img6],
+    badge: "Popular",
+    rating: 4.7,
+    reviews: 78,
+    description: "Direct On-Line starter for motors with thermal overload protection, ideal for direct starting of induction motors.",
+    specs: [
+      { label: "Type", value: "DOL Starter" },
+      { label: "Phase", value: "Single/Three Phase" },
+      { label: "Motor Range", value: "1 HP - 10 HP" },
+      { label: "Protection", value: "Thermal Overload" },
+      { label: "Enclosure", value: "IP55" },
+    ],
+    benefits: [
+      "Simple and reliable",
+      "Cost-effective",
+      "Easy to maintain",
+      "Compact size",
+      "Quick installation",
+    ],
+    applications: [
+      "Motor starting",
+      "Pumps",
+      "Fans",
+      "Compressors"
+    ],
+    relatedProducts: [26, 27, 29],
+  },
+  {
+    id: 29,
+    name: "Motor Running Capacitor",
+    category: "motor-capacitor",
+    image: img5,
+    images: [img5, img8, img11],
+    rating: 4.6,
+    reviews: 54,
+    description: "High-quality motor running capacitors for continuous duty, ensuring smooth motor operation and power factor correction.",
+    specs: [
+      { label: "Type", value: "Running Capacitor" },
+      { label: "Capacitance", value: "2.5 µF - 50 µF" },
+      { label: "Voltage", value: "440V AC" },
+      { label: "Dielectric", value: "Polypropylene Film" },
+      { label: "Life", value: "10,000 Hours" },
+    ],
+    benefits: [
+      "Long service life",
+      "High reliability",
+      "Low dissipation factor",
+      "Excellent self-healing properties",
+      "Wide temperature range",
+    ],
+    applications: [
+      "Single-phase motors",
+      "Fans",
+      "Pumps",
+      "Air conditioners"
+    ],
+    relatedProducts: [30, 28, 26],
+  },
+  {
+    id: 30,
+    name: "Motor Starting Capacitor",
+    category: "motor-capacitor",
+    image: img5,
+    images: [img5, img8, img11],
+    badge: "New",
+    rating: 4.5,
+    reviews: 42,
+    description: "Electrolytic motor starting capacitors for high starting torque, providing quick and reliable motor startup.",
+    specs: [
+      { label: "Type", value: "Starting Capacitor" },
+      { label: "Capacitance", value: "50 µF - 500 µF" },
+      { label: "Voltage", value: "220V - 440V" },
+      { label: "Dielectric", value: "Electrolytic" },
+      { label: "Duty Cycle", value: "Intermittent" },
+    ],
+    benefits: [
+      "High starting torque",
+      "Quick motor start",
+      "Reliable performance",
+      "Wide capacitance range",
+      "Affordable pricing",
+    ],
+    applications: [
+      "Motor starting",
+      "Pumps",
+      "Compressors",
+      "Heavy-duty motors"
+    ],
+    relatedProducts: [29, 31, 28],
+  },
+  {
+    id: 31,
+    name: "Submersible Capacitor",
+    category: "submersible-capacitor",
+    image: img5,
+    images: [img5, img8, img11],
+    badge: "Best Seller",
+    rating: 4.9,
+    reviews: 132,
+    description: "Water-resistant submersible pump capacitors designed for underwater use, providing reliable performance in wet conditions.",
+    specs: [
+      { label: "Type", value: "Submersible Capacitor" },
+      { label: "Capacitance", value: "10 µF - 100 µF" },
+      { label: "Voltage", value: "240V - 440V" },
+      { label: "Protection", value: "Water Resistant" },
+      { label: "Enclosure", value: "Plastic/Metal" },
+    ],
+    benefits: [
+      "Water-resistant design",
+      "Reliable underwater performance",
+      "Long service life",
+      "High insulation resistance",
+      "Corrosion resistant",
+    ],
+    applications: [
+      "Submersible pumps",
+      "Borewell pumps",
+      "Openwell pumps",
+      "Underwater applications"
+    ],
+    relatedProducts: [30, 20, 4],
   },
   {
     id: 2,
@@ -239,11 +431,12 @@ export const products = [
     id: 8,
     name: "Control System Cables",
     category: "wire-cables",
-    image: img8,
-    images: [img8, img5, img11],
+    image: img25,
+    images: [img25, img8, img5],
     rating: 4.4,
     reviews: 38,
     description: "High-grade insulated electrical cables for industrial pump control systems. Provides reliable power and signal transmission.",
+
     specs: [
       { label: "Type", value: "Shielded" },
       { label: "Length", value: "10m" },
