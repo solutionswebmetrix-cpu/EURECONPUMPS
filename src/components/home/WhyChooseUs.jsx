@@ -5,22 +5,22 @@ const features = [
   {
     icon: FiShield,
     title: 'Unmatched Durability',
-    desc: 'Our pumps are built with premium materials to withstand the harshest industrial conditions.',
+    desc: 'Our pumps are built with premium materials including stainless steel, cast iron, and specialized alloys to withstand the harshest industrial conditions, ensuring long service life and minimal maintenance.',
   },
   {
     icon: FiCpu,
     title: 'Smart Technology',
-    desc: 'Integrated IoT sensors for real-time monitoring and predictive maintenance alerts.',
+    desc: 'Integrated IoT sensors for real-time monitoring, predictive maintenance alerts, and energy consumption tracking, helping you optimize performance and reduce operational costs.',
   },
   {
     icon: FiClock,
     title: '24/7 Support',
-    desc: 'Global network of engineers ready to assist you anytime, anywhere in the world.',
+    desc: 'Global network of certified engineers and technicians ready to assist you anytime, anywhere in the world, with emergency response services available around the clock.',
   },
   {
     icon: FiSettings,
     title: 'Custom Engineering',
-    desc: 'Tailored solutions designed specifically for your unique operational requirements.',
+    desc: 'Tailored solutions designed specifically for your unique operational requirements, including custom pump designs, materials, and configurations to meet your exact needs.',
   },
 ];
 
@@ -46,7 +46,10 @@ const WhyChooseUs = () => {
             </h2>
             <p className="text-text-secondary text-lg mb-12 leading-relaxed">
               With over 15 years of excellence, we combine futuristic design with heavy-duty engineering 
-              to provide the most reliable industrial solutions on the planet.
+              to provide the most reliable industrial solutions on the planet. Our commitment to quality, 
+              innovation, and customer satisfaction has made us a trusted partner for thousands of businesses 
+              worldwide, delivering sustainable, energy-efficient fluid handling solutions that drive 
+              productivity and profitability.
             </p>
 
             <div className="grid grid-cols-2 gap-8">

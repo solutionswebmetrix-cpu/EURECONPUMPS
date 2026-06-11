@@ -26,13 +26,21 @@ const Footer = () => {
               Efficiency, durability, and innovation in every pump.
             </p>
             <div className="flex gap-4">
-              {[FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube].map((Icon, idx) => (
+              {[
+                { Icon: FaFacebookF, href: "#" },
+                { Icon: FaTwitter, href: "#" },
+                { Icon: FaLinkedinIn, href: "#" },
+                { Icon: FaInstagram, href: "https://www.instagram.com/eurecon_pumps?utm_source=qr&igsh=MXRkemVmZXI3b2s5dQ==" },
+                { Icon: FaYoutube, href: "https://youtube.com/@eureconpumps8330?si=yOLE1nNqthhvENWK" }
+              ].map((item, idx) => (
                 <a
                   key={idx}
-                  href="#"
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full glass flex items-center justify-center text-text-secondary hover:text-primary hover:border-primary transition-all duration-300 border border-transparent hover:shadow-lg"
                 >
-                  <Icon size={18} />
+                  <item.Icon size={18} />
                 </a>
               ))}
             </div>

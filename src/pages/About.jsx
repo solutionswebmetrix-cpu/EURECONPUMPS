@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { FiTarget, FiEye, FiHeart, FiAward, FiUsers, FiTrendingUp } from 'react-icons/fi';
 
 const values = [
-  { icon: FiTarget, title: 'Our Mission', desc: 'To revolutionize industrial fluid handling through sustainable innovation and engineering excellence.' },
-  { icon: FiEye, title: 'Our Vision', desc: 'To be the global leader in high-performance pump technology, setting the standard for efficiency.' },
-  { icon: FiHeart, title: 'Our Values', desc: 'Integrity, precision, and a relentless focus on customer success drive everything we do.' },
+  { icon: FiTarget, title: 'Our Mission', desc: 'To revolutionize industrial fluid handling through sustainable innovation and engineering excellence, delivering reliable, energy-efficient solutions that empower businesses worldwide to operate more productively and responsibly.' },
+  { icon: FiEye, title: 'Our Vision', desc: 'To be the global leader in high-performance pump technology, setting the standard for efficiency, durability, and customer-centric innovation while driving the transition to sustainable industrial practices.' },
+  { icon: FiHeart, title: 'Our Values', desc: 'Integrity, precision, and a relentless focus on customer success drive everything we do. We are committed to quality, innovation, and environmental responsibility in every product we manufacture and every service we provide.' },
 ];
 
 const About = () => {
@@ -31,7 +31,11 @@ const About = () => {
           <p className="text-text-secondary text-xl md:text-2xl leading-relaxed">
             Founded in 2010, Eurecon Pumps emerged with a singular vision: to create the world's most 
             efficient and reliable industrial fluid solutions. Today, we are at the forefront of the 
-            engineering revolution, blending futuristic design with heavy-duty performance.
+            engineering revolution, blending futuristic design with heavy-duty performance. Our comprehensive 
+            product portfolio includes submersible pumps, openwell pumps, borewell pumps, control panels, 
+            and solar-powered solutions, serving diverse industries such as agriculture, water treatment, 
+            manufacturing, construction, and more. With a commitment to quality, innovation, and customer 
+            satisfaction, we continue to push the boundaries of what's possible in fluid handling technology.
           </p>
         </div>
       </div>

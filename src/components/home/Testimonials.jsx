@@ -12,19 +12,19 @@ const testimonials = [
   {
     name: 'Robert Jenkins',
     role: 'CTO, Global Infra',
-    content: 'Eurecon Pumps has completely transformed our cooling systems. The efficiency gains were immediate and the smart monitoring is a game changer.',
+    content: 'Eurecon Pumps has completely transformed our cooling systems. The efficiency gains were immediate and the smart monitoring is a game changer. We have reduced our energy consumption by 25% and our maintenance costs have dropped significantly. The team at Eurecon provided exceptional support throughout the installation process and continues to be responsive to our needs.',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80',
   },
   {
     name: 'Sarah Chen',
     role: 'Operations Director',
-    content: 'The reliability of these pumps in corrosive environments is unmatched. We have seen a 40% reduction in maintenance costs since switching.',
+    content: 'The reliability of these pumps in corrosive environments is unmatched. We have seen a 40% reduction in maintenance costs since switching to Eurecon Pumps. Their products are built to last and their customer service is outstanding. We highly recommend Eurecon Pumps to any business looking for high-quality, reliable fluid handling solutions.',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80',
   },
   {
     name: 'Michael Rodriguez',
     role: 'Lead Engineer',
-    content: 'Fantastic support and engineering precision. The custom solution they built for our deep-sea project exceeded all performance metrics.',
+    content: 'Fantastic support and engineering precision. The custom solution they built for our deep-sea project exceeded all performance metrics. Eurecon\'s team of engineers worked closely with us to understand our unique requirements and delivered a solution that perfectly met our needs. Their attention to detail and commitment to quality is truly impressive.',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80',
   },
 ];
@@ -44,7 +44,9 @@ const Testimonials = () => {
             </h2>
             <p className="text-text-secondary text-lg">
               We've helped thousands of companies optimize their fluid handling processes with our premium 
-              industrial solutions.
+              industrial solutions. Our customers span across diverse industries including agriculture, 
+              manufacturing, water treatment, construction, and more, all benefiting from our commitment 
+              to quality, innovation, and customer satisfaction.
             </p>
           </div>
           <div className="flex gap-4">

@@ -27,8 +27,8 @@ const Contact = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 { icon: FiMail, title: 'Email Us', info: 'info@eureconpumps.com', sub: 'Support 24/7' },
-                { icon: FiPhone, title: 'Call Us', info: '+1 (234) 567-8900', sub: 'Mon-Fri, 9am-6pm' },
-                { icon: FiMapPin, title: 'Visit Us', info: '123 Industrial Ave', sub: 'Tech City, Global Hub' },
+                { icon: FiPhone, title: 'Call Us', info: '+91 9575121555', sub: 'Mon-Fri, 9am-6pm' },
+                { icon: FiMapPin, title: 'Visit Us', info: 'Block C1 FF 27-28, D.M. Tower, Rawabhata', sub: 'Raipur, Chhattisgarh, 493221, India' },
                 { icon: FiClock, title: 'Response Time', info: 'Under 2 Hours', sub: 'For all inquiries' },
               ].map((item, idx) => (
                 <motion.div
