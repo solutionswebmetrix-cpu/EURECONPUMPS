@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX, HiChevronDown, HiChevronRight, HiSearch } from 'react-icons/hi';
 import { productCategories } from '../../data/categories';
 import { solarSolutions, solutionCategories } from '../../data/solutions';
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,17 +52,24 @@ const Navbar = () => {
       >
         <div className="w-full px-6 lg:px-12 flex justify-between items-center relative">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-lg">E</span>
+          <Link to="/" className="flex items-center gap-4">
+            <img
+              src={logo}
+              alt="Eurecon Pumps logo"
+              className="w-14 h-14 rounded-2xl object-cover shadow-2xl ring-1 ring-slate-900/20 filter brightness-90"
+            />
+            <div>
+              <h2
+                className={`text-2xl font-bold tracking-tight transition-all duration-300 ${
+                  isScrolled || !isHomePage ? 'text-slate-800' : 'text-white'
+                }`}
+              >
+                EURECON<span className="text-cyan-500">PUMPS</span>
+              </h2>
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
+                Industrial Fluid Solutions
+              </p>
             </div>
-            <h2
-              className={`text-2xl font-bold tracking-tight transition-all duration-300 ${
-                isScrolled || !isHomePage ? 'text-slate-800' : 'text-white'
-              }`}
-            >
-              EURECON<span className="text-cyan-500">PUMPS</span>
-            </h2>
           </Link>
 
           {/* Desktop Menu */}
