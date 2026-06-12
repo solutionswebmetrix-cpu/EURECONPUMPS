@@ -64,11 +64,9 @@ const Navbar = () => {
                   isScrolled || !isHomePage ? 'text-slate-800' : 'text-white'
                 }`}
               >
-                EURECON<span className="text-cyan-500">PUMPS</span>
+                
               </h2>
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
-                Industrial Fluid Solutions
-              </p>
+            
             </div>
           </Link>
 
